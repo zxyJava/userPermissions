@@ -1,0 +1,60 @@
+
+POST http://localhost:8081/menu
+#Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+	"menuName":"系统设置",
+    "subMenus":[],
+    "parent":{},
+    "path":"http:",
+    "sort":1,
+    "permissionIdentity":{},
+    "routerName":"abc",
+    "icon":"zero",
+    "component":"component"
+}
+
+###
+
+GET http://localhost:8081/menu
+#Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+
+}
+
+###
+
+PUT http://localhost:8081/menu
+#Accept: application/json
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "id": 18,
+          "insertTime": 1551856566000,
+          "lastModifyTime": 1551856566000,
+          "menuName": "menu",
+          "path": "1",
+          "sort": 1,
+          "permissionIdentity": {
+            "id": 19,
+            "insertTime": 1551856566000,
+            "lastModifyTime": 1551856566000,
+            "name": "a",
+            "key": "666d4eca-4e31-4e00-9f5b-a67bea8b2933",
+            "description": null,
+            "roles": null,
+            "accounts": null
+          },
+          "routerName": "1",
+          "icon": "1",
+          "component": "1",
+          "subMenus": []
+}
+
+###
